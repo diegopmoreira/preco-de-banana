@@ -44,7 +44,7 @@ $(document).ready(function () {
     console.log(i);
 
     for (i = i; i < i + 4; i++) {
-      $("#afiliados ul").append("<li class=\"afiliado\"><h2>".concat(afiliados[i].title, "</h2><p>").concat(afiliados[i].descricao, "</p>  <h3>Preview</h3><iframe    src=\"").concat(afiliados[i].link, "\"    frameborder=\"0\"    sandbox=\"allow-popups\"  ></iframe></li>"));
+      $("#afiliados ul").append("<li class=\"afiliado\"><h2>".concat(afiliados[i].title, "</h2><p>").concat(afiliados[i].descricao, "</p>  <h3><a href=\"").concat(afiliados[i].link, "\"Preview</h3><iframe    src=\"").concat(afiliados[i].link, "\"    frameborder=\"0\"    sandbox=\"allow-popups\"  ></iframe></li>"));
     }
   });
 });
