@@ -11,6 +11,11 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   font-family: sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.display-none {
+  display: none;
 }
 
 header {
@@ -19,6 +24,12 @@ header {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 
   #logo {
     font-family: Good-dog;
@@ -39,6 +50,9 @@ header {
     flex-direction: column;
 
     align-items: center;
+    @media only screen and (min-width: 600px) {
+      flex-direction: row;
+    }
     li {
       a {
         color: #000;
@@ -47,9 +61,9 @@ header {
         padding: 20px;
         display: block;
         text-decoration: none;
-        :hover {
-          color: #fff;
-        }
+      }
+      :hover {
+        color: #fff;
       }
       img {
         width: 140px;
@@ -96,7 +110,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 
     .afiliado {
@@ -162,5 +176,32 @@ footer {
     text-align: center;
     padding: 20px 80px;
     text-decoration: none;
+  }
+
+  div {
+    height: 240px;
+    margin-top: 80px;
+    display: block;
+    background: #d3a612;
+    clear: both;
+    ::before,
+    ::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 3px;
+      background: #000;
+      margin: 14px auto 10px auto;
+    }
+
+    p {
+      max-width: 60%;
+      line-height: 20px;
+      display: block;
+      margin: 0 auto;
+      font-weight: bold;
+      font-family: sans-serif;
+      padding: 40px;
+    }
   }
 }
