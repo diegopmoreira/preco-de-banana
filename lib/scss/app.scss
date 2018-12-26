@@ -40,8 +40,6 @@ header {
 
     align-items: center;
     li {
-      margin: 20px;
-
       a {
         color: #000;
         font-weight: bold;
@@ -49,6 +47,9 @@ header {
         padding: 20px;
         display: block;
         text-decoration: none;
+        :hover {
+          color: #fff;
+        }
       }
       img {
         width: 140px;
@@ -70,11 +71,12 @@ header {
   p {
     font-size: 1.15rem;
     display: block;
-    max-width: 320px;
+    max-width: 280px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-style: italic;
+    font-weight: bold;
   }
   ::before,
   ::after {

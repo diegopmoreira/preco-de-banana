@@ -10,6 +10,7 @@ const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-sass");
 const minify = require("gulp-minify");
+const babel = require("gulp-babel");
 
 // BrowserSync
 function browserSync(done) {
@@ -61,7 +62,7 @@ function scripts() {
   return gulp
     .src(["lib/js/*.js"])
     .pipe(plumber())
-    .pipe(babel({ presets: ["env"] }))
+    .pipe(babel({ presets: ["@babel/env"] }))
     .pipe(minify())
     .pipe(gulp.dest("dist/assets/js"))
     .pipe(browsersync.stream());

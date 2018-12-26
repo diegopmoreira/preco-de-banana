@@ -1,0 +1,1 @@
+"use strict";var _afiliados=_interopRequireDefault(require("../content/afiliados.json"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}console.log(_afiliados.default);

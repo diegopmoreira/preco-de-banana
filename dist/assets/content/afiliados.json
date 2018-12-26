@@ -1,0 +1,24 @@
+{
+  "afiliados": [
+    {
+      "title": "Afiliado 1",
+      "descricao": "lorem ipsum",
+      "link": "http://www.google.com"
+    },
+    {
+      "title": "Afiliado 2",
+      "descricao": "lorem ipsum",
+      "link": "http://www.google.com"
+    },
+    {
+      "title": "Afiliado 3",
+      "descricao": "lorem ipsum",
+      "link": "http://www.google.com"
+    },
+    {
+      "title": "Afiliado 4",
+      "descricao": "lorem ipsum",
+      "link": "http://www.google.com"
+    }
+  ]
+}
