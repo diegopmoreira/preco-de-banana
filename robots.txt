@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://diegopmoreira.github.io/preco-de-banana/dist/sitemap.xml
