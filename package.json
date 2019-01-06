@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
   "dependencies": {
+    "express": "^4.16.4",
     "normalize.css": "^8.0.1",
+    "nunjucks": "^3.1.6",
     "reset-css": "^4.0.1"
   },
   "devDependencies": {
@@ -13,6 +18,12 @@
     "babel-core": "^6.26.3",
     "browser-sync": "^2.26.3",
     "cssnano": "^4.1.8",
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
@@ -20,6 +31,7 @@
     "gulp-minify": "^3.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "nodemon": "^1.18.9"
   }
 }
