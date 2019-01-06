@@ -8,6 +8,7 @@ const guestMiddleware = require('../app/middlewares/guest')
 const AffiliateController = require('../app/controllers/AffiliateController')
 const SessionController = require('../app/controllers/SessionController')
 const UserController = require('../app/controllers/UserController')
+const HomeController = require('../app/controllers/HomeController')
 
 route.use((req, res, next) => {
   res.locals.flashSuccess = req.flash('success')
@@ -16,9 +17,7 @@ route.use((req, res, next) => {
   return next()
 })
 
-route.get('/', (req, res) => {
-  return res.render('home')
-})
+route.get('/', HomeController.index)
 
 route.get('/login', guestMiddleware, SessionController.create)
 route.post('/login', SessionController.store)

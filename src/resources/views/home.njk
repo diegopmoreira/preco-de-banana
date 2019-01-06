@@ -50,17 +50,18 @@
         </p>
       </blockquote>
       <ul>
+      {% for affiliate in affiliates %}
         <li class="afiliado">
-          <h2></h2>
-          <p></p>
+          <h2>{{ affiliate.title }}</h2>
+          <p>{{ affiliate.description }}</p>
           <h3>Preview</h3>
 
-          <iframe src="" frameborder="0" sandbox="allow-popups"></iframe>
+          <iframe src="{{ affiliate.link }}" frameborder="0" sandbox="allow-popups"></iframe>
         </li>
+        {% endfor %}
       </ul>
     </section>
     <footer>
-      <button id="quero-mais">Quero ver mais afiliados!</button>
       <div>
         <p>
           Uma plataforma que visa simplicidade e minimalismo com a entrega de
@@ -81,4 +82,5 @@
   ></script>
 
   <script src="assets/js/app-min.js"></script>
+
 </html>
