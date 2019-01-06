@@ -1,0 +1,11 @@
+{% extends "_layouts/default.njk" %}
+
+{% block content %}
+<div class="column" style="max-width: 450px;">
+  <form class="ui form" action="/app/affiliates/{{ affiliate._id }}" method="post">
+    {% include "affiliates/_form.njk" %}
+    <button class="ui button" type="submit">Save</button>
+  </form>
+</div>
+
+{% endblock %}
