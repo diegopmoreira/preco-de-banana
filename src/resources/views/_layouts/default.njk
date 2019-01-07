@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App - Preco Di banana</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+
+    <style>
+      body > .grid {
+        height: 100%;
+      }
+      body .logout {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="App" class="ui middle aligned center aligned grid">{% block content %}{% endblock %}</div>
+    <a href="/app/logout" class="logout"><i class="icon power"></i></a>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>

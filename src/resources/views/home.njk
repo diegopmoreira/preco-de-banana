@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <meta
+      name="description"
+      content="Uma plataforma que visa simplicidade e minimalismo com a entrega de
+    produtos Hotmart de qualidade."
+    />
+
+    <meta
+      name="google-site-verification"
+      content="H1KIc2wLBDbgCF51BrE5PQohE7Zz7XlHOjY-DsRQYl0"
+    />
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+    <title>
+      Preço di Banana - Afiliados Hotmart á Preço de Banana só Encontra Aqui
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo"><a href="#">Preço di Banana</a></h1>
+      <ul id="menu">
+        <li class="display-none">
+          <a title="contato" href="mailto:diegopm07@yahoo.com.br">Contato</a>
+        </li>
+        <li class="display-none">
+          <a title="seja-afiliado" href="mailto:diegopm07@yahoo.com.br"
+            >Seja um afiliado</a
+          >
+        </li>
+
+        <li>
+          <a title="banana" href="#"
+            ><img src="assets/img/bananas.png" alt="banana-banana"
+          /></a>
+        </li>
+      </ul>
+    </header>
+
+    <section id="afiliados">
+      <blockquote id="snippet">
+        <p>
+          Os Afiliados Mais Tops do Mercado a Preço de Banana Você Só Encontra
+          Aqui!
+        </p>
+      </blockquote>
+      <ul>
+      {% for affiliate in affiliates %}
+        <li class="afiliado">
+          <h2>{{ affiliate.title }}</h2>
+          <p>{{ affiliate.description }}</p>
+          <h3>Preview</h3>
+
+          <iframe src="{{ affiliate.link }}" frameborder="0" sandbox="allow-popups"></iframe>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    <footer>
+      <div>
+        <p>
+          Uma plataforma que visa simplicidade e minimalismo com a entrega de
+          produtos Hotmart de qualidade. O Search Engine Optimization foi o
+          foco, de forma que, se você está aqui é porque pudemos lhe ajudar a
+          encontrar ou se aproximar se um produto que você deseja a "Preço di
+          banana". Preço de banana não significa qualidade baixa mas uma boa
+          oferta. Se você também deseja fazer parte desta rede de afiliados,
+          entre em contato, é de graça.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="assets/js/app-min.js"></script>
+
+</html>
