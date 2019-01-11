@@ -52,9 +52,8 @@
       <ul>
       {% for affiliate in affiliates %}
         <li class="afiliado">
-          <h2>{{ affiliate.title }}</h2>
+          <h2><a href="{{ affiliate.link }}">{{ affiliate.title }}</a></h2>
           <p>{{ affiliate.description }}</p>
-          <h3>Preview</h3>
 
           <iframe src="{{ affiliate.link }}" frameborder="0" sandbox="allow-popups"></iframe>
         </li>
